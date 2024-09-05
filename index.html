@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cash register</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div>
+    <div class="title-container"><h1 id="title"><img src="https://www.svgrepo.com/show/444215/cash-register.svg" width="40px"> Cash Register</h1></div>
+    <div id="change-due" class="status-open"><strong><img src="https://www.svgrepo.com/show/179107/open-sign.svg" width="45px">Status: OPEN</strong></div>
+    <div id="cash-container">
+     <p class="Customer-money"><strong><img src="https://www.svgrepo.com/show/300868/wallet.svg" width="20px"> Enter cash from customer:</strong></p>
+      <input type="number" id="cash" min="0">
+    </div>
+    
+    <div id="price-container">
+      <p class="price"><strong><img src="https://www.svgrepo.com/show/268992/price-tag-price.svg" width="20px"> Price:</strong></p>
+      <input type="number" id="price" min="0">
+    </div>
+    
+    <button id="purchase-btn">Purchase</button>
+    <div id="cash-register">
+      <div class="money-in-register">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Money in Register</th>
+            </tr>
+            <tr>
+              <th>Currency</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PENNY</td>
+              <td id="PENNY">$1.01</td>
+            </tr>
+            <tr>
+              <td>NICKEL</td>
+              <td id="NICKEL">$2.05</td>
+            </tr>
+            <tr>
+              <td>DIME</td>
+              <td id="DIME">$3.10</td>
+            </tr>
+            <tr>
+              <td>QUARTER</td>
+              <td id="QUARTER">$4.25</td>
+            </tr>
+            <tr>
+              <td>ONE</td>
+              <td id="ONE">$90.00</td>
+            </tr>
+            <tr>
+              <td>FIVE</td>
+              <td id="FIVE">$55.00</td>
+            </tr>
+            <tr>
+              <td>TEN</td>
+              <td id="TEN">$20.00</td>
+            </tr>
+            <tr>
+              <td>TWENTY</td>
+              <td id="TWENTY">$60.00</td>
+            </tr>
+            <tr>
+              <td>ONE HUNDRED</td>
+              <td id="ONE-HUNDRED">$100.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
